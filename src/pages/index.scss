@@ -1,0 +1,11 @@
+/* global style */
+@import '../common/fonts/fonts.scss';
+@import '../common/variables/variables.scss';
+@import '../common/global/normalize/normalize.scss';
+
+/* general styles */
+@import '../common/header/header.scss';
+@import '../common/body/body.scss';
+
+/* bloks */
+@import '../blocks/hero/hero.scss'

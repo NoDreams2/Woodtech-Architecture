@@ -1,0 +1,11 @@
+.header {
+    padding-inline: 50px
+}
+
+@import './__container/header__container.scss';
+@import './__navigation-list/header__navigation-list.scss';
+@import './__list-link/header__list-link.scss';
+@import './__list-link/_active/header__list-link_active.scss';
+@import './__soc-list/header__soc-list.scss';
+@import './__soc-img/header__soc-img.scss';
+@import './__logo/header__logo.scss';
