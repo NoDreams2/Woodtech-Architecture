@@ -24,6 +24,25 @@ function serve() {
   });
 }
 
+// Pipe libs
+const swiperDir = 'node_modules/swiper/'
+function copySwiper() {
+  return gulp.src([
+    swiperDir + 'swiper-bundle.min.js',
+    swiperDir + 'swiper-bundle.min.css'
+  ])
+    .pipe(gulp.dest('dist/libs/swiper/'))
+}
+
+const bootstrapDir = 'node_modules/bootstrap/dist/'; 
+function copyBootstrap() {
+  return gulp.src([
+    bootstrapDir + 'css/bootstrap.min.css', 
+    bootstrapDir + 'js/bootstrap.bundle.min.js', 
+  ])
+    .pipe(gulp.dest('dist/libs/bootstrap/')); 
+}
+
 function pagesScss() {
   const plugins = [autoprefixer(), mediaquery(), cssnano()];
   return gulp
@@ -63,12 +82,14 @@ function html() {
 
 // Pipe scripts.js
 function scripts() {
-  return gulp
-    .src(["src/js/**/*.js"])
-    .pipe(concatGulp("main.js"))
-    .pipe(uglify())
-    .pipe(gulp.dest("dist"))
-    .pipe(browserSync.reload({ stream: true }));
+  return gulp.src('src/**/*.js')
+          .pipe(order([
+            'src/blocks/hero/hero.js',
+          ], { base: './' }))
+          .pipe(concatGulp('main.js'))
+          .pipe(uglify())
+          .pipe(gulp.dest('dist'))
+          .pipe(browserSync.reload({stream: true}));
 }
 
 // Pipe images
@@ -89,33 +110,6 @@ function fonts() {
     .pipe(browserSync.reload({ stream: true }));
 }
 
-// Pipe libs
-const swiperDir = 'node_modules/swiper/'
-function copySwiper() {
-  return gulp.src([
-    swiperDir + 'swiper-bundle.min.js',
-    swiperDir + 'swiper-bundle.min.css'
-  ])
-    .pipe(gulp.dest('dist/libs/swiper/'))
-}
-
-const gsapDir = 'node_modules/gsap/dist/';
-function copyGsap() {
-  return gulp.src([
-    gsapDir + 'ScrollTrigger.min.js'
-  ])
-    .pipe(gulp.dest('dist/libs/gsap/'))
-}
-
-const bootstrapDir = 'node_modules/bootstrap/dist/'; 
-function copyBootstrap() {
-  return gulp.src([
-    bootstrapDir + 'css/bootstrap.min.css', 
-    bootstrapDir + 'js/bootstrap.bundle.min.js', 
-  ])
-    .pipe(gulp.dest('dist/libs/bootstrap/')); 
-}
-
 // File monitoring
 function watchFiles() {
   gulp.watch(["src/**/*.html"], html);
@@ -130,7 +124,7 @@ function clean() {
 
 const build = gulp.series(
   clean,
-  gulp.parallel(html, pagesScss, scripts, fonts, images, copyBootstrap, copyGsap, copySwiper)
+  gulp.parallel(html, pagesScss, scripts, fonts, images, copyBootstrap, copySwiper)
 );
 const watchapp = gulp.parallel(build, watchFiles, serve);
 

@@ -1,5 +1,17 @@
 .header__navigation-list {
-    display: flex;
-    align-items: center;
-    gap: 50px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+@media (max-width: 1001px) {
+  .header__navigation-list {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 851px) {
+  .header__navigation-list {
+    display: none;
+  }
 }

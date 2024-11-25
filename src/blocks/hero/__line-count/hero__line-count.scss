@@ -1,0 +1,12 @@
+.hero__line-count {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 28px;
+        top: -15px;
+        left: -1px;
+        background-color: rgba(53, 57, 65, 1);;
+    }
+}

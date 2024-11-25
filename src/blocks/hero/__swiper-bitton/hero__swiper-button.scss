@@ -1,0 +1,10 @@
+.hero__swiper-button {
+    color: rgba(129, 139, 157, 1);
+    transition: color 0.25s ease;
+    &::after {
+        font-size: 20px;
+    }
+    &:hover {
+        color: $accent-color;
+    }
+}

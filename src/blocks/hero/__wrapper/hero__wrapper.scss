@@ -1,0 +1,17 @@
+.hero__wrapper {
+  width: 440px;
+  height: 90px;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(32, 35, 40, 1);
+  border-radius: 10px 0 0 0;
+}
+
+@media (max-width: 526px) {
+  .hero__wrapper {
+    width: 180px;
+    height: 70px;
+  }
+}

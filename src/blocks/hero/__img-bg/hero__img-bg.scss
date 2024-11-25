@@ -1,0 +1,12 @@
+.hero__img-bg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 20px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.85;
+  border-radius: 10px;
+  overflow: hidden;
+}

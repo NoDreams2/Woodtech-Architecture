@@ -1,0 +1,24 @@
+.hero__swiper-scrollbar {
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+.swiper-scrollbar-drag {
+    background-color: $accent-color;
+}
+
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+    height: 5px;
+    position: relative;
+    margin-top: 6px;
+}
+
+.slider-scrollbar {
+    flex: 1 0 0;
+}
+
+@media (max-width: 526px) {
+    .hero__swiper-scrollbar {
+      display: none;
+    }
+  }

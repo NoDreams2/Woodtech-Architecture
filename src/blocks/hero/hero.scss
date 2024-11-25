@@ -2,15 +2,12 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    background-image: url(../../images/header/interior-3.jpg);
     width: calc(100% - 20px);
     height: calc(100vh - 20px);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     z-index: -1;
     opacity: 0.85;
-    border-radius: 10px; 
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 @import './__container/hero__container.scss';
@@ -18,3 +15,16 @@
 @import './__title-top/hero__title-top.scss';
 @import './__title-bottom/hero__title-bottom.scss';
 @import './__desc/hero__desc.scss';
+@import './__img-bg/hero__img-bg.scss';
+@import './__img-bg/_opacity/hero__img-bg_opacity.scss';
+@import './__wrapper/hero__wrapper.scss';
+@import './__current-count/hero__current-count.scss';
+@import './__total-count/hero__total-count.scss';
+@import './__swiper-pagination-count/hero__swiper-pagination-count.scss';
+@import './__line-count/hero__line-count.scss';
+@import './__swiper-scrollbar/hero__swiper-scrollbar.scss';
+@import './__wraper-content/hero__wrapper-content.scss';
+@import './__slider-navigation-container/hero__slider-navigation-container.scss';
+@import './__swiper-bitton/hero__swiper-button.scss';
+@import './__swiper-button-prev/hero__swiper-button-prev.scss';
+@import './__swiper-button-next/hero__swiper-button-next.scss';

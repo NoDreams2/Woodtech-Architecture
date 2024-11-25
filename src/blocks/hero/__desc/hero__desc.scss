@@ -9,3 +9,16 @@
     border-radius: 0 10px 0 10px;
     line-height: 170%;
 }
+
+@media (max-width: 451px) {
+    .hero__desc {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 351px) {
+    .hero__desc {
+        padding-inline: 18px;
+        padding-block: 11px;
+    }
+}

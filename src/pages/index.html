@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Woodtech Architecture</title>
+    <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./bundle.css" />
   </head>
   <body class="body">
@@ -94,6 +95,48 @@
           </p>
         </div>
       </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div
+              class="hero__img-bg"
+              style="background-image: url(../images/hero/interior-3.jpg)"
+            ></div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="hero__img-bg hero__img-bg_opacity"
+              style="background-image: url(../images/hero/interior-2.jpg)"
+            ></div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="hero__img-bg hero__img-bg_opacity"
+              style="background-image: url(../images/hero/interior-8.jpg)"
+            ></div>
+          </div>
+        </div>
+        <div class="hero__wrapper">
+          <div class="hero__wrapper-content">
+            <div class="hero__swiper-pagination-count">
+              <span class="hero__current-count">01</span>
+              <div class="hero__line-count"></div>
+              <span class="hero__total-count"></span>
+            </div>
+            <div class="slider-scrollbar">
+              <div class="swiper-scrollbar hero__swiper-scrollbar"></div>
+            </div>
+            <div class="hero__slider-navigation">
+              <div class="hero__slider-navigation-container">
+                <div class="swiper-button-prev hero__swiper-button hero__swiper-button-prev"></div>
+                <div class="swiper-button-next hero__swiper-button hero__swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
+  <script src="./libs/swiper/swiper-bundle.min.js"></script>
+  <script src="./main.js"></script>
 </html>
