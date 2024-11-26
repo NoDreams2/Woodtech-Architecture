@@ -1,0 +1,11 @@
+.header__mobile-navigation-text {
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    user-select: none;
+}
+
+@media (max-width: 491px) {
+    .header__mobile-navigation-text  {
+        display: none;
+    }
+}

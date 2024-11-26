@@ -1,11 +1,11 @@
 .header__list-link {
-    color: #fff;
-    padding-inline: 15px;
-    padding-block: 8px;
-    transition: background-color 0.25s ease;
-    border-radius: 0 5px 0 5px;
-    overflow: hidden;
-    &:hover {
-        background-color: rgba(196, 196, 196, 0.2);
-    }
+  color: #fff;
+  padding-inline: 15px;
+  padding-block: 8px;
+  transition: background-color 0.25s ease;
+  border-radius: 0 5px 0 5px;
+  overflow: hidden;
+  &:hover {
+    background-color: rgba(196, 196, 196, 0.2);
+  }
 }

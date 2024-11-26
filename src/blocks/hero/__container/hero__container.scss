@@ -29,19 +29,18 @@
   .hero__container {
     padding-inline-start: 50px;
     padding-inline-end: 50px;
+    margin-top: 30vw;
   }
 }
 
-@media (max-width: 526px) {
+@media (max-width: 430px) {
   .hero__container {
-    margin-top: 34vw;
-    padding-inline-start: 34px;
-    padding-inline-end: 34px;
+    padding-inline-start: 37px;
+    padding-inline-end: 37px;
+    margin-top: 42vw;
   }
 }
 
-@media (max-width: 351px) {
-  .hero__container {
-    margin-top: 40vw;
-  }
-}
+
+
+

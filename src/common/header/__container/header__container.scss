@@ -8,16 +8,12 @@
   padding-block-start: 40px;
   padding-block-end: 27px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-@media (max-width: 1151px) {
-  .header__container {
-    padding-inline: 0;
-  }
+  z-index: 5;
 }
 
 @media (max-width: 851px) {
   .header__container {
+    padding-inline: 20px;
     padding-block-start: 30px;
     padding-block-end: 16px;
   }

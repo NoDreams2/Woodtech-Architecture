@@ -1,0 +1,28 @@
+.header__mobile-navigation {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .header__mobile-navigation {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-inline: 12px;
+    padding-block: 8px;
+    border-radius: 0 5px 0 5px;
+    transition: background-color 0.25s ease;
+    overflow: hidden;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(196, 196, 196, 0.2);
+    }
+  }
+}
+
+@media (max-width: 383px) {
+  .header__mobile-navigation {
+    padding-inline: 8px;
+    padding-block: 5px;
+    order: 3;
+  }
+}

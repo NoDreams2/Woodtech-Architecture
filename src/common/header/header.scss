@@ -1,17 +1,28 @@
 .header {
-    padding-inline: 50px
+  padding-inline: 50px;
+  z-index: 5;
 }
 
 @media (max-width: 1081px) {
-    .header {
-      padding-inline: 30px;
-    }
+  .header {
+    padding-inline: 30px;
   }
+}
 
-@import './__container/header__container.scss';
-@import './__navigation-list/header__navigation-list.scss';
-@import './__list-link/header__list-link.scss';
-@import './__list-link/_active/header__list-link_active.scss';
-@import './__soc-list/header__soc-list.scss';
-@import './__soc-img/header__soc-img.scss';
-@import './__logo/header__logo.scss';
+@media (max-width: 851px) {
+  .header {
+    padding-inline: 10px;
+  }
+}
+
+@import "./__container/header__container.scss";
+@import "./__navigation-list/header__navigation-list.scss";
+@import "./__list-link/header__list-link.scss";
+@import "./__list-link/_active/header__list-link_active.scss";
+@import "./__soc-list/header__soc-list.scss";
+@import "./__soc-img/header__soc-img.scss";
+@import "./__logo/header__logo.scss";
+@import "./__navigation/header__navigation.scss";
+@import "./__mobile-navigation/header__mobile-navigation.scss";
+@import "./__mobile-navigation-text/header__mobile-navigation-text.scss";
+@import "./__mobile-navigation-img/header__mobile-navigation-img.scss";

@@ -4,14 +4,8 @@
   gap: 50px;
 }
 
-@media (max-width: 1001px) {
+@media (max-width: 1036px) {
   .header__navigation-list {
     gap: 10px;
-  }
-}
-
-@media (max-width: 851px) {
-  .header__navigation-list {
-    display: none;
   }
 }

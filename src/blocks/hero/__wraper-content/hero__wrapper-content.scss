@@ -1,16 +1,16 @@
 .hero__wrapper-content {
-    display: flex;
-    gap: 40px;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 43px;
-    padding-inline-start: 36px;
-    padding-inline-end: 16px;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 43px;
+  padding-inline-start: 36px;
+  padding-inline-end: 16px;
 }
 
 @media (max-width: 526px) {
-    .hero__wrapper-content {
-        gap: 10px;
-        margin-top: 30px;
-    }
+  .hero__wrapper-content {
+    gap: 10px;
+    margin-top: 30px;
   }
+}
