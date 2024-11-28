@@ -1,12 +1,16 @@
 .mobile-menu {
-    height: 0; 
-    overflow: hidden; 
-    transition: height 0.5s ease; 
-  }
-  
-  .mobile-menu.open {
-    height: auto; 
-  }
+  position: fixed;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.25s ease;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+}
+
+.mobile-menu.open {
+  height: auto;
+}
 
 .mobile-menu .header__navigation-list {
   margin: 0 auto;

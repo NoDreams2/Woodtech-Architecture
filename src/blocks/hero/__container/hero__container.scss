@@ -4,7 +4,13 @@
   margin: 0 auto;
   padding-inline-start: 70px;
   margin-top: 16.4vw;
-  z-index: 2;
+  z-index: 2; 
+}
+
+@media (max-width: 1181px) {
+  .hero__container {
+    padding-inline-start: 50px;
+  }
 }
 
 @media (max-width: 901px) {

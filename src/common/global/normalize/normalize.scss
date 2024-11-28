@@ -350,13 +350,13 @@ template {
   display: none;
 }
 
-.list {
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.link {
+a {
   text-decoration: none;
 }
 
@@ -366,4 +366,23 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin: 0;
+}
+
+.button {
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 145%;
+  background-color: $accent-color;
+  border-radius: 0 5px 0 5px;
+  text-align: center;
+}
+
+.midle-header {
+  font-family: raleway, sans-serif;
+  font-size: 18px;
+  color: $dark-header;
+  text-transform: uppercase;
+  font-weight: 900;
 }

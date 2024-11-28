@@ -50,3 +50,4 @@ function updateCounter(swiper) {
       ? `0${swiper.slides.length}`
       : swiper.slides.length;
 }
+

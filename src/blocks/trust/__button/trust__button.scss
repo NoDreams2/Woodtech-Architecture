@@ -1,0 +1,28 @@
+.trust__button {
+  bottom: 0;
+  right: 0;
+  padding-inline: 30px;
+  padding-block-start: 15px;
+  padding-block-end: 12px;
+  margin: 0 0 0 auto;
+  transition: background-color 0.25s ease;
+  overflow: hidden;
+  &:hover {
+    background-color: $dark-div;
+  }
+}
+
+@media (max-width: 992px) {
+  .trust__button {
+    margin: 0 auto 0 0;
+  }
+}
+
+@media (max-width: 449px) {
+  .trust__button {
+    padding-inline: 20px;
+    padding-block-start: 10px;
+    padding-block-end: 7px;
+    font-size: 12px;
+  }
+}

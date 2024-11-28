@@ -1,0 +1,12 @@
+.trust__item-text {
+    font-weight: 400;
+    font-size: 14px;
+    color: $dark-header;
+    text-transform: lowercase;
+}
+
+@media (max-width: 449px) {
+    .trust__item-text {
+        font-size: 12px;
+    }
+}

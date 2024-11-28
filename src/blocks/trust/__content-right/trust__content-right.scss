@@ -1,0 +1,13 @@
+.trust__content-right {
+    padding: 0 0 0 5px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 992px) {
+    .trust__content-right {
+        text-align: left;
+        padding: 0;
+    }
+}

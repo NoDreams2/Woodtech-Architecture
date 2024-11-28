@@ -1,0 +1,25 @@
+.trust__phone-number {
+    font-family: roboto, sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 165%;
+    color: rgba(255, 255, 255, 1);
+    margin: 0 0 16px auto;
+    transition: color 0.25s ease;
+    &:hover {
+        color: $accent-color;
+    }
+}
+
+@media (max-width: 992px) {
+    .trust__phone-number {
+        margin: 0 0 16px 0;
+    }
+}
+
+@media (max-width: 449px) {
+    .trust__phone-number {
+        font-size: 24px;
+        margin: 0 0 12px 0;
+    }
+}

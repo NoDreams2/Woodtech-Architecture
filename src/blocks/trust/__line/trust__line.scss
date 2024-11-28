@@ -1,0 +1,11 @@
+.trust__line {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '';
+        height: 1px;
+        width: 221px;
+        background-color: $dark-div;
+        top: 15px;
+    }
+}
