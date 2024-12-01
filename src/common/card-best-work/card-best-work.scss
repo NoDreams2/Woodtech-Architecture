@@ -1,0 +1,41 @@
+.card-best-work {
+  padding: 0;
+  position: relative;
+  background-color: rgba(255, 255, 255, 1);
+  height: 341px;
+  max-width: 360px;
+  border-bottom: 3px solid $light-disabled;
+  transition: border-bottom 0.25s ease;
+  cursor: pointer;
+  &:hover {
+    border-bottom: 3px solid $accent-color;
+    .card-best-work__title-icon {
+      color: $accent-color;
+    }
+
+    .card-best-work__image-container {
+      &::after {
+        opacity: 0.25;
+      }
+    }
+
+    .card-best-work__img {
+      transform: scale(1.04);
+    }
+
+    .card-best-work__image-wrapper {
+      &::before {
+        inset: 10px;
+      }
+    }
+  }
+}
+
+@import "./__img/card-best-work__img.scss";
+@import "./__location-link/card-best-work__location-link.scss";
+@import "./__title-link/card-best-work__title-link.scss";
+@import "./__location-text/card-best-work__location-text.scss";
+@import "./__title-text/card-best-work__title-text.scss";
+@import "./__title-icon/card-best-work__title-icon.scss";
+@import "./__image-container/card-best-work__image-container.scss";
+@import "./__image-wrapper/card-best-work__image-wrapper.scss";

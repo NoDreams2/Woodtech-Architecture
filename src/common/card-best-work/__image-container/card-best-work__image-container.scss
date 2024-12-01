@@ -1,0 +1,15 @@
+.card-best-work__image-container {
+    position: relative;
+    overflow: hidden;
+    &::after {
+        position: absolute;
+        content: '';
+        inset: 0;
+        width: 100%;
+        height: auto;
+        background-color: $dark;
+        opacity: 0;
+        transition: opacity 0.25s ease;
+        z-index: 2;
+    }
+}

@@ -377,6 +377,13 @@ p {
   background-color: $accent-color;
   border-radius: 0 5px 0 5px;
   text-align: center;
+  cursor: pointer;
+}
+
+.img-responsive {
+    display: block;
+    height: auto;
+    width: 100%;
 }
 
 .midle-header {
@@ -385,4 +392,13 @@ p {
   color: $dark-header;
   text-transform: uppercase;
   font-weight: 900;
+}
+
+.small-text {
+  font-family: raleway, sans-serif;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
 }

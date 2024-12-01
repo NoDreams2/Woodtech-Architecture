@@ -1,0 +1,11 @@
+.card-best-work__image-wrapper {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        inset: -6px;
+        border: 1px solid rgba(243, 245, 246, 0.6);
+        z-index: 1;
+        transition: inset 0.25s ease;
+    }
+}

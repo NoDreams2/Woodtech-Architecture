@@ -1,0 +1,13 @@
+.projects {
+    background-color: rgba(243, 245, 246, 1);
+    padding-bottom: 57px;
+}
+
+@import './__text/projects__text.scss';
+@import './__desc/projects__desc.scss';
+@import './__best-works/projects__best-works.scss';
+@import './__best-works-span/projects__best-works-span.scss';
+@import './__best-works-title/projects__best-works-title.scss';
+@import './__cards/projects__cards.scss';
+@import './__button/projects__button.scss';
+@import './__row/projects__row.scss';

@@ -1,0 +1,13 @@
+.projects__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 169px;
+    padding-block-start: 12px;
+    padding-block-end: 9.5px;
+    transition: background-color 0.25s ease;
+    &:hover {
+        background-color: $dark;
+    }
+}

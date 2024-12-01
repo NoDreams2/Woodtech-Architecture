@@ -5,8 +5,14 @@
     text-transform: lowercase;
 }
 
-@media (max-width: 449px) {
+@media (max-width: 1253px) {
     .trust__item-text {
-        font-size: 12px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 990px) {
+    .trust__item-text {
+        font-size: 14px;
     }
 }
