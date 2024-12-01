@@ -1,4 +1,12 @@
 .projects__best-works {
     width: 460px;
-    padding-left: 48px;
+    padding-inline-start: 48px;
+}
+
+@media (max-width: 992px) {
+    .projects__best-works {
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
 }

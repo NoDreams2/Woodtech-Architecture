@@ -5,3 +5,12 @@
     padding-block: 10px;
     border-right: 1px solid $dark-div;
 }
+
+@media (max-width: 992px) {
+    .projects__desc {
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        border: none;
+    }
+}

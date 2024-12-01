@@ -5,5 +5,15 @@
     margin: 0 auto;
     padding-block-start: 63px;
     padding-block-end: 167px;
+    padding-inline: 30px;
     background-color: $dark;
+}
+
+@media (max-width: 992px) {
+    .projects__text {
+        gap: 14px;
+        flex-direction: column-reverse;
+        padding-block-start: 44px;
+        padding-block-end: 148px;
+    }
 }

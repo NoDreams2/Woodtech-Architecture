@@ -9,3 +9,9 @@
     gap: 10px;
   }
 }
+
+@media (max-width: 348px) {
+  .header__navigation-list {
+    border: 1px solid $light-bg;
+  }
+}
