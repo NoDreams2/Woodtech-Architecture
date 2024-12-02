@@ -8,7 +8,7 @@ const autoprefixer = require("autoprefixer");
 const mediaquery = require("postcss-combine-media-query");
 const cssnano = require("cssnano");
 const htmlMinify = require("html-minifier");
-const sass = require('gulp-sass')(require('sass'));
+const sass = require("gulp-sass")(require("sass"));
 const uglify = require("gulp-uglify");
 const concatGulp = require("gulp-concat");
 const order = require("gulp-order");
@@ -24,23 +24,30 @@ function serve() {
   });
 }
 
-// Pipe libs
-const swiperDir = 'node_modules/swiper/'
-function copySwiper() {
-  return gulp.src([
-    swiperDir + 'swiper-bundle.min.js',
-    swiperDir + 'swiper-bundle.min.css'
-  ])
-    .pipe(gulp.dest('dist/libs/swiper/'))
+// Pipe json
+function copyJson() {
+  return gulp.src("src/blocks/projects/projects.json").pipe(gulp.dest("dist/"));
 }
 
-const bootstrapDir = 'node_modules/bootstrap/dist/'; 
+// Pipe libs
+const swiperDir = "node_modules/swiper/";
+function copySwiper() {
+  return gulp
+    .src([
+      swiperDir + "swiper-bundle.min.js",
+      swiperDir + "swiper-bundle.min.css",
+    ])
+    .pipe(gulp.dest("dist/libs/swiper/"));
+}
+
+const bootstrapDir = "node_modules/bootstrap/dist/";
 function copyBootstrap() {
-  return gulp.src([
-    bootstrapDir + 'css/bootstrap.min.css', 
-    bootstrapDir + 'js/bootstrap.bundle.min.js', 
-  ])
-    .pipe(gulp.dest('dist/libs/bootstrap/')); 
+  return gulp
+    .src([
+      bootstrapDir + "css/bootstrap.min.css",
+      bootstrapDir + "js/bootstrap.bundle.min.js",
+    ])
+    .pipe(gulp.dest("dist/libs/bootstrap/"));
 }
 
 function pagesScss() {
@@ -82,14 +89,13 @@ function html() {
 
 // Pipe scripts.js
 function scripts() {
-  return gulp.src('src/**/*.js')
-          .pipe(order([
-            'src/blocks/hero/hero.js',
-          ], { base: './' }))
-          .pipe(concatGulp('main.js'))
-          .pipe(uglify())
-          .pipe(gulp.dest('dist'))
-          .pipe(browserSync.reload({stream: true}));
+  return gulp
+    .src("src/**/*.js")
+    .pipe(order(["src/blocks/hero/hero.js"], { base: "./" }))
+    .pipe(concatGulp("main.js"))
+    .pipe(uglify())
+    .pipe(gulp.dest("dist"))
+    .pipe(browserSync.reload({ stream: true }));
 }
 
 // Pipe images
@@ -124,7 +130,16 @@ function clean() {
 
 const build = gulp.series(
   clean,
-  gulp.parallel(html, pagesScss, scripts, fonts, images, copyBootstrap, copySwiper)
+  gulp.parallel(
+    html,
+    pagesScss,
+    scripts,
+    fonts,
+    images,
+    copyBootstrap,
+    copySwiper,
+    copyJson
+  )
 );
 const watchapp = gulp.parallel(build, watchFiles, serve);
 

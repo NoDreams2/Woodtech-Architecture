@@ -2,14 +2,14 @@
   padding: 0;
   position: relative;
   background-color: rgba(255, 255, 255, 1);
-  max-height: 341px;
+  max-height: auto;
   max-width: 360px;
   border-bottom: 3px solid $light-disabled;
   transition: border-bottom 0.25s ease;
   cursor: pointer;
   &:hover {
     border-bottom: 3px solid $accent-color;
-    .card-best-work__title-icon {
+    .card-best-work__desc-icon {
       color: $accent-color;
     }
 
@@ -33,9 +33,9 @@
 
 @import "./__img/card-best-work__img.scss";
 @import "./__location-link/card-best-work__location-link.scss";
-@import "./__title-link/card-best-work__title-link.scss";
+@import "./__desc-link/card-best-work__desc-link.scss";
 @import "./__location-text/card-best-work__location-text.scss";
-@import "./__title-text/card-best-work__title-text.scss";
-@import "./__title-icon/card-best-work__title-icon.scss";
+@import "./__desc-text/card-best-work__desc-text.scss";
+@import "./__desc-icon/card-best-work__desc-icon.scss";
 @import "./__image-container/card-best-work__image-container.scss";
 @import "./__image-wrapper/card-best-work__image-wrapper.scss";

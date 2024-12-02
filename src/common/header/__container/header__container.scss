@@ -24,3 +24,15 @@
     padding-block-end: 16px;
   }
 }
+
+@media (max-width: 383px) {
+  .header__container {
+    padding-block-start: 20px;
+    padding-block-end: 10px;
+  }
+
+  .header__container.scrolled {
+    padding-block: 10px;
+  }
+}
+

@@ -377,6 +377,7 @@ p {
   background-color: $accent-color;
   border-radius: 0 5px 0 5px;
   text-align: center;
+  user-select: none;
   cursor: pointer;
 }
 

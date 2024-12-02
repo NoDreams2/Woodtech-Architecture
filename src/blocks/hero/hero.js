@@ -4,6 +4,7 @@ const swiperImg = new Swiper(".swiper-container", {
   spaceBetween: "2%",
   autoplay: {
     delay: 6000,
+    disableOnInteraction: false, // Важно: автопрокрутка продолжает работать даже после взаимодействия пользователя
   },
   on: {
     init: function () {
@@ -27,7 +28,7 @@ const swiperContainer = document.querySelector(".swiper-container");
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
+      if (entry.isIntersecting && entry.intersectionRatio >= 0.2) {
         swiperImg.autoplay.start();
       } else {
         swiperImg.autoplay.stop();
@@ -35,9 +36,11 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    threshold: 0,
+    threshold: [0.2], // Наблюдать, когда видно 20% или больше
   }
 );
+
+observer.observe(swiperContainer);
 
 function updateCounter(swiper) {
   const curNum = document.querySelector(".hero__current-count");
@@ -50,4 +53,3 @@ function updateCounter(swiper) {
       ? `0${swiper.slides.length}`
       : swiper.slides.length;
 }
-
