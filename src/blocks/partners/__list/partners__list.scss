@@ -1,0 +1,12 @@
+.partners__list {
+    gap: 20px;
+    align-items: end;
+    justify-content: center;
+    padding-inline: 30px;
+}
+
+@media (max-width: 580px) {
+    .partners__list {
+        gap: 36px;
+    }  
+}

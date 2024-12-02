@@ -1,0 +1,11 @@
+.partners__item {
+    padding: 0;
+    max-width: 280px;
+    text-align: center;
+}
+
+@media (max-width: 580px) {
+    .partners__item {
+        max-width: 100%;
+    }    
+}

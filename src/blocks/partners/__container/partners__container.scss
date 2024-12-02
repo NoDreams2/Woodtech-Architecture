@@ -1,0 +1,14 @@
+.partners__container {
+    padding-block: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+@media (max-width: 1179px) {
+    .partners__container {
+        padding-block: 50px;
+    }  
+}

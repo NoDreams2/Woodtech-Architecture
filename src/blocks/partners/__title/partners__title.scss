@@ -1,0 +1,10 @@
+.partners__title {
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 30px;
+}
+
+@media (max-width: 580px) {
+    .partners__title {
+        margin-bottom: 50px;
+    }  
+}
