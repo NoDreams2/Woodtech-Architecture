@@ -1,0 +1,12 @@
+.about-us__text-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+@media (max-width: 575px) {
+    .about-us__text-bottom {
+        gap: 30px;
+    }
+}

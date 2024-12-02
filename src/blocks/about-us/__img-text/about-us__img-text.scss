@@ -1,0 +1,25 @@
+.about-us__img-text {
+    position: absolute;
+    bottom: 60px;
+    right: -25px;
+    width: 240px;
+    background-color: rgba(32, 35, 40, 0.9);
+    font-weight: 400;
+    font-size: 21px;
+    color: rgba(255, 255, 255, 1);
+    padding-inline: 25px;
+    padding-block: 20px;
+    border-radius: 0 10px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    line-height: 120%;
+}
+
+@media (max-width: 445px) {
+    .about-us__img-text {
+        padding-block: 10px;
+        padding-inline: 15px;
+        font-size: 16px;
+    }
+}

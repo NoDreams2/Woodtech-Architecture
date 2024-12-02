@@ -1,0 +1,10 @@
+.about-us__text {
+    width: 550px;
+    padding: 0;
+}
+
+@media (max-width: 1130px) {
+    .about-us__text {
+        margin-top: -40px;
+    }
+}

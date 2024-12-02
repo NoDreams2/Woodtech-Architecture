@@ -1,0 +1,16 @@
+.about-us__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 0 auto;
+    padding-block-start: 90px;
+    padding-block-end: 83px;
+    padding-inline: 30px;
+}
+
+@media (max-width: 1130px) {
+    .about-us__container {
+        padding-block: 57px;
+    }
+}

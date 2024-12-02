@@ -1,0 +1,11 @@
+.about-us__img-number {
+    font-family: roboto, sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+}
+
+@media (max-width: 445px) {
+    .about-us__img-number {
+        font-size: 40px;
+    }
+}

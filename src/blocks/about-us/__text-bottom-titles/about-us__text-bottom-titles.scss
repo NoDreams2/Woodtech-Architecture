@@ -1,0 +1,16 @@
+.about-us__text-bottom-titles {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-bottom: 26px;
+    &::after {
+        position: absolute;
+        content: '';
+        bottom: -13px;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background-color: $light-div;
+    }
+}

@@ -4,7 +4,7 @@ const swiperImg = new Swiper(".swiper-container", {
   spaceBetween: "2%",
   autoplay: {
     delay: 6000,
-    disableOnInteraction: false, // Важно: автопрокрутка продолжает работать даже после взаимодействия пользователя
+    disableOnInteraction: false,
   },
   on: {
     init: function () {
@@ -36,7 +36,7 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    threshold: [0.2], // Наблюдать, когда видно 20% или больше
+    threshold: [0.2],
   }
 );
 

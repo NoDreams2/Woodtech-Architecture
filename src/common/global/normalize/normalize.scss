@@ -350,6 +350,10 @@ template {
   display: none;
 }
 
+.row {
+  margin: 0;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -395,6 +399,12 @@ p {
   font-weight: 900;
 }
 
+.regular-header {
+  font-weight: 800;
+  font-size: 29px;
+  color: $text;
+}
+
 .small-text {
   font-family: raleway, sans-serif;
   font-size: 14px;
@@ -402,4 +412,10 @@ p {
   letter-spacing: 0;
   color: rgba(255, 255, 255, 1);
   font-weight: 400;
+}
+
+.read-more {
+  font-weight: 800;
+  font-size: 15px;
+  color: $text;
 }

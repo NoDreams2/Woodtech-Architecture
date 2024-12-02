@@ -1,0 +1,12 @@
+.about-us__text-bottom-desc {
+    color: $text;
+    margin-bottom: 10px;
+    min-width: 260px;
+    max-width: 265px;
+}
+
+@media (max-width: 575px) {
+    .about-us__text-bottom-desc {
+        min-width: 100%;
+    }
+}
