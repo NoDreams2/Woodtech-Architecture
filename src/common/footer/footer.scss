@@ -1,0 +1,17 @@
+.footer {
+    background-color: $deep;
+}
+
+@import './__container/footer__container.scss';
+@import './__logo/footer__logo.scss';
+@import './__title/footer__title.scss';
+@import './__logo-title/footer__logo-title.scss';
+@import './__logo-desc/footer__logo-desc.scss';
+@import './__navs-columns/footer__navs-columns.scss';
+@import './__title/_line-margin/footer__title_line-margin.scss';
+@import './__nav-list/footer__nav-list.scss';
+@import './__nav-link/footer__nav-link.scss';
+@import './__social-desc/footer__social-desc.scss';
+@import './__social-list/footer__social-list.scss';
+@import './__soc-link/footer__soc-link.scss';
+@import './__soc-img/footer__soc-img.scss';

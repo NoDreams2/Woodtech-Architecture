@@ -1,0 +1,7 @@
+.footer__nav-link {
+    color: rgba(196, 196, 196, 1);
+    transition: color 0.25s ease;
+    &:hover {
+        color: $accent-color;
+    }
+}

@@ -23,3 +23,5 @@ const blogSwiper = new Swiper(".blog__swiper-container", {
     },
   },
 });
+
+

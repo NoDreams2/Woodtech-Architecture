@@ -1,0 +1,12 @@
+.footer__navs-columns {
+    display: flex;
+    padding-inline: 40px;
+    gap: 52px;
+}
+
+@media (max-width: 992px) {
+    .footer__navs-columns {
+        padding-inline: 12px;
+        margin: 40px 0;
+    }
+}

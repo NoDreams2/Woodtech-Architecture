@@ -1,0 +1,11 @@
+.footer__social-desc {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 25px;
+}
+
+@media (max-width: 992px) {
+    .footer__social-desc {
+        margin-bottom: 15px;
+    }
+}

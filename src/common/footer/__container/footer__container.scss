@@ -1,0 +1,15 @@
+.footer__container {
+    padding-inline: 80px;
+    display: flex;
+    padding-block: 70px;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+@media (max-width: 992px) {
+    .footer__container {
+        padding-inline: 30px;
+        padding-block: 50px;
+    }
+}

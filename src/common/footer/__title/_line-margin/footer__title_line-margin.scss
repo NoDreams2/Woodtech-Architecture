@@ -1,0 +1,14 @@
+.footer__title_line-margin {
+    position: relative;
+    margin-bottom: 43px;
+    &::after {
+        position: absolute;
+        content: '';
+        bottom: -20px;
+        left: 0;
+        width: 25px;
+        height: 3px;
+        background-color: $accent-color;
+        border-radius: 0 5px 0 5px;
+    }
+}
