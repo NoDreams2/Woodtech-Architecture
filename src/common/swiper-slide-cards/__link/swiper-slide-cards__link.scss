@@ -1,0 +1,8 @@
+.swiper-slide-cards__link {
+    text-decoration: underline;
+    transition: color 0.25s ease;
+    padding-inline: 15px;
+    &:hover {
+        color: $accent-color;
+    }
+}

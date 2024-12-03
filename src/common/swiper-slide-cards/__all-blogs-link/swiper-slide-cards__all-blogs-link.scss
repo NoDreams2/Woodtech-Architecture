@@ -1,0 +1,16 @@
+.swiper-slide-cards__all-blogs-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: $text;
+    text-decoration: underline;
+    transition: color 0.25s ease;
+    z-index: 10;
+    line-height: 120%;
+    cursor: pointer;
+    &:hover {
+        color: $accent-color;
+    }
+}

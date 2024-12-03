@@ -1,0 +1,19 @@
+.swiper-pagination {
+  position: relative;
+  margin: 30px 0 50px 0;
+  bottom: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: $dark-header;
+  width: 25px;
+  height: 5px;
+  border-radius: 0 5px 0 5px;
+  &-active {
+    background-color: $accent-color;
+  }
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
+}

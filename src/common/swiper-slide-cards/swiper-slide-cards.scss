@@ -1,0 +1,18 @@
+.swiper-slide-cards {
+  position: relative;
+  padding-inline: 15px;
+  padding-block-start: 15px;
+  padding-block-end: 20px;
+  border: 1px solid rgba(238, 238, 238, 1);
+  border-radius: 0 10px 0 10px;
+}
+
+@import "./__img-date/swiper-slide-cards__img-date.scss";
+@import "./__image/swiper-slide-cards__image.scss";
+@import "./__img/swiper-slide-cards__img.scss";
+@import "./__img-title/swiper-slide-cards__img-title.scss";
+@import "./__img-desc/swiper-slide-cards__img-desc.scss";
+@import "./__img-link/swiper-slide-cards__img-link.scss";
+@import "./__link/swiper-slide-cards__link.scss";
+@import "./__all-blogs/swiper-slide-cards__all-blogs.scss";
+@import "./__all-blogs-link/swiper-slide-cards__all-blogs-link.scss";

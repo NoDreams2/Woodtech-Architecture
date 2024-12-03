@@ -1,0 +1,7 @@
+.swiper-slide-cards__img-link {
+    &:hover {
+        .swiper-slide-cards__img-title {
+            color: $accent-color;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.swiper-slide-cards__img-date {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding-inline: 10px;
+    padding-block-start: 4.5px;
+    padding-block-end: 4px;
+    background-color: $accent-color;
+    font-family: roboto, sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    border-radius: 0 5px 0 5px;
+}

@@ -1,0 +1,10 @@
+.blog__title {
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+@media (max-width: 786px) {
+    .blog__title {
+        margin-bottom: 30px;
+    }
+  }

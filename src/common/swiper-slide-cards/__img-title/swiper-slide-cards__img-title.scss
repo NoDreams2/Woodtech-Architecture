@@ -1,0 +1,15 @@
+.swiper-slide-cards__img-title {
+    position: relative;
+    transition: color 0.25s ease;
+    font-size: 18px;
+    margin: 0 0 17px 15px;
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: -15px;
+        width: 3px;
+        height: 100%;
+        background-color: $accent-color;
+    }
+}
