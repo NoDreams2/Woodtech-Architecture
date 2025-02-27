@@ -5,5 +5,5 @@ npm install
 
 # 🖥 Запуск
 ```
-npm run dev
+gulp
 ```
